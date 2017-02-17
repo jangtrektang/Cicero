@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cicero.Core.Helpers
+namespace Cicero.Core.Helpers.Membership
 {
-    public class UserHelper
+    public class PasswordHelper
     {
         public string HashPassword(string password)
         {

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cicero.Core", "Cicero.Core\Cicero.Core.csproj", "{F23481A6-6D57-4DC0-972B-2F4E25A926AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cicero.Core", "Cicero.Core\Cicero.Core.csproj", "{CD29E27D-8C35-426E-8C33-8ACA27DA7F6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cicero.Api", "Cicero.Api\Cicero.Api.csproj", "{68FC1AA1-53C3-4E52-91EF-528FF263183C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F23481A6-6D57-4DC0-972B-2F4E25A926AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F23481A6-6D57-4DC0-972B-2F4E25A926AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F23481A6-6D57-4DC0-972B-2F4E25A926AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F23481A6-6D57-4DC0-972B-2F4E25A926AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD29E27D-8C35-426E-8C33-8ACA27DA7F6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD29E27D-8C35-426E-8C33-8ACA27DA7F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD29E27D-8C35-426E-8C33-8ACA27DA7F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD29E27D-8C35-426E-8C33-8ACA27DA7F6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68FC1AA1-53C3-4E52-91EF-528FF263183C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68FC1AA1-53C3-4E52-91EF-528FF263183C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68FC1AA1-53C3-4E52-91EF-528FF263183C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68FC1AA1-53C3-4E52-91EF-528FF263183C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

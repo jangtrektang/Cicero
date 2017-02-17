@@ -7,13 +7,13 @@ namespace Cicero.Core.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class initialcreation : IMigrationMetadata
+    public sealed partial class AddedUserObject : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(initialcreation));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddedUserObject));
         
         string IMigrationMetadata.Id
         {
-            get { return "201702171943396_initialcreation"; }
+            get { return "201702172238159_AddedUserObject"; }
         }
         
         string IMigrationMetadata.Source

@@ -6,16 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cicero.Core.DataObjects.DataContext
+namespace Cicero.Core.DataObjects
 {
-    class CiceroContext : DbContext
+    public class CiceroContext : DbContext
     {
         public DbSet<User> Users { get; set; }
-        public DbSet<Recipe> Recipes { get; set; }
-        public DbSet<Ingredient> Ingredients { get; set; }
-        public DbSet<Instruction> Instructions { get; set; }
-        public DbSet<Tag> Tags { get; set; }
-        
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

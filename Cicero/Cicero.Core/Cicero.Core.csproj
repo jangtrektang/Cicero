@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F23481A6-6D57-4DC0-972B-2F4E25A926AA}</ProjectGuid>
+    <ProjectGuid>{CD29E27D-8C35-426E-8C33-8ACA27DA7F6A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Cicero.Core</RootNamespace>
@@ -49,28 +49,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataObjects\DataContext\CiceroContext.cs" />
-    <Compile Include="DataObjects\Ingredient.cs" />
-    <Compile Include="DataObjects\Instruction.cs" />
-    <Compile Include="DataObjects\Recipe.cs" />
-    <Compile Include="DataObjects\Tag.cs" />
+    <Compile Include="DataObjects\CiceroContext.cs" />
     <Compile Include="DataObjects\User.cs" />
-    <Compile Include="Helpers\UserHelper.cs" />
-    <Compile Include="Migrations\201702171943396_initialcreation.cs" />
-    <Compile Include="Migrations\201702171943396_initialcreation.Designer.cs">
-      <DependentUpon>201702171943396_initialcreation.cs</DependentUpon>
+    <Compile Include="Helpers\Membership\PasswordHelper.cs" />
+    <Compile Include="Migrations\201702172238159_AddedUserObject.cs" />
+    <Compile Include="Migrations\201702172238159_AddedUserObject.Designer.cs">
+      <DependentUpon>201702172238159_AddedUserObject.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702171943396_initialcreation.resx">
-      <DependentUpon>201702171943396_initialcreation.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201702172238159_AddedUserObject.resx">
+      <DependentUpon>201702172238159_AddedUserObject.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
