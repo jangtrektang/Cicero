@@ -11,6 +11,8 @@ namespace Cicero.Core.DataObjects
     public class CiceroContext : DbContext
     {
         public DbSet<User> Users { get; set; }
+        public DbSet<Client> Clients { get; set; }
+        public DbSet<RefreshToken> RefreshTokens { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

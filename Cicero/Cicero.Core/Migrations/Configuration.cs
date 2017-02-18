@@ -34,6 +34,33 @@ namespace Cicero.Core.Migrations
             users.ForEach(s => context.Users.AddOrUpdate(p => p.Username, s));
             context.SaveChanges();
 
+            var clients = new List<Client>()
+            {
+                new Client()
+                {
+                    ID = "angularApp",
+                    Secret = ph.HashPassword("angularversie2"),
+                    Name = "Angular front-end Application",
+                    ApplicationType = ApplicationTypes.JavaScript,
+                    Active = true,
+                    RefreshTokenLifeTime = 7200,
+                    AllowedOrigin = "*"
+                },
+                new Client()
+                {
+                    ID = "consoleApp",
+                    Secret = ph.HashPassword("consoleapp"),
+                    Name = "Console Application",
+                    ApplicationType = ApplicationTypes.NativeConfidential,
+                    Active = true,
+                    RefreshTokenLifeTime = 7200,
+                    AllowedOrigin = "*"
+                }
+            };
+
+            clients.ForEach(s => context.Clients.AddOrUpdate(p => p.ID, s));
+            context.SaveChanges();
+
         }
     }
 }
