@@ -76,15 +76,21 @@ namespace Cicero.Api.Controllers
         [ResponseType(typeof(User))]
         public async Task<IHttpActionResult> PostUser(User user)
         {
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            user.Password = new PasswordHelper().HashPassword(user.Password);
+            string passwordHashed = new PasswordHelper().HashPassword(user.Password);
+
+            user.Password = passwordHashed;
+            user.Created = DateTime.Now;
 
             db.Users.Add(user);
             await db.SaveChangesAsync();
+
+            
 
             return CreatedAtRoute("DefaultApi", new { id = user.ID }, user);
         }

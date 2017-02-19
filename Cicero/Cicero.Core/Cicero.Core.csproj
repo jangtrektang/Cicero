@@ -51,8 +51,10 @@
   <ItemGroup>
     <Compile Include="DataObjects\CiceroContext.cs" />
     <Compile Include="DataObjects\Client.cs" />
+    <Compile Include="DataObjects\ErrorLog.cs" />
     <Compile Include="DataObjects\RefreshToken.cs" />
     <Compile Include="DataObjects\User.cs" />
+    <Compile Include="Helpers\ErrorLogging\ErrorHelper.cs" />
     <Compile Include="Helpers\Membership\PasswordHelper.cs" />
     <Compile Include="Migrations\201702172238159_AddedUserObject.cs" />
     <Compile Include="Migrations\201702172238159_AddedUserObject.Designer.cs">
@@ -61,6 +63,10 @@
     <Compile Include="Migrations\201702180909039_AddedClientsRefreshTokens.cs" />
     <Compile Include="Migrations\201702180909039_AddedClientsRefreshTokens.Designer.cs">
       <DependentUpon>201702180909039_AddedClientsRefreshTokens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702191736234_addedErrorLogging.cs" />
+    <Compile Include="Migrations\201702191736234_addedErrorLogging.Designer.cs">
+      <DependentUpon>201702191736234_addedErrorLogging.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,6 +81,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702180909039_AddedClientsRefreshTokens.resx">
       <DependentUpon>201702180909039_AddedClientsRefreshTokens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702191736234_addedErrorLogging.resx">
+      <DependentUpon>201702191736234_addedErrorLogging.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
